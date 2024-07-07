@@ -124,8 +124,6 @@ if __name__ == "__main__":
     api_key = os.getenv('NVIDIA_API_KEY')
     llm_url = 'https://integrate.api.nvidia.com/v1'
     analyzer_llm = AnalyzerLLM(api_key=api_key, llm_url=llm_url)
-    # task = ('Conference in New York with weekend travel', '$3,000')
-    # analysis = analyzer_llm.analyze_task(task)
     topics_json = analyzer_llm.analyze_topics(split_text('contract.txt'))
     output_file = io.open("topics.json", 'w', encoding='utf-8')
     output_file.write(json.dumps(topics_json))
