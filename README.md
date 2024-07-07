@@ -19,6 +19,21 @@ Also, a few shortcurs were used, e.g.: the file is not uploaded in the app, but 
 ```shell
     pip install -r requirements.txt      
 ```
+- To run the app, you will need an API key from Nvidia. Register an account with Nvidia (https://build.nvidia.com/explore/discover) and go to models (https://build.nvidia.com/explore/reasoning). Click on any model of your choice (e.g. https://build.nvidia.com/meta/llama3-70b) and choose ```Get API key```. Copy the key and export it as and environment variable, e.g.:
+```shell
+    export NVIDIA_API_KEY=YOUR_KEY      
+```
+or
+```shell
+    set NVIDIA_API_KEY=YOUR_KEY      
+```
+Also, add your key to the ```config.yml``` file:
+
+```yaml
+api:
+    - nvidia_key: YOUR_KEY 
+```
+
 - Run the app:
  ```shell
     python app.py      
