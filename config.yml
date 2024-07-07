@@ -1,0 +1,14 @@
+api:
+  nvidia_emb: https://ai.api.nvidia.com/v1/retrieval/nvidia
+  nvidia_key: YOUR_KEY
+embeddings_dataset:
+  dataset_path_on_disk: vector_sim_db
+index:
+  doc_prefix: fn
+  name: idx:fn_cloud
+  overwrite: true
+  type: FLAT
+input:
+  path: contract.txt
+retriever:
+  top_k: 3

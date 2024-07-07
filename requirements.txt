@@ -1,0 +1,7 @@
+gradio
+numpy
+openai
+langchain==0.1.13
+transformers==4.37.1
+datasets==2.16.1
+faiss-cpu==1.7.4
