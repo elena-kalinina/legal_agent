@@ -48,4 +48,4 @@ The app will run on localhost:5450. To reproduce the results, indicate ```contra
  ```shell
     python contract_agent.py      
 ```
-
+The extracted keywords will be saved in the file named ```topics.json``` in the root directory.
